@@ -24,13 +24,13 @@ jobs:
         aws-region: us-east-1
     
     - name: Terraform Init
-      run: terraform Init
+      run: terraform init
     
     - name: Terraform Validate
-      run: terraform Validate
+      run: terraform validate
 
     - name: Terraform Plan
       run: terraform plan
 
     - name: Terraform Apply
-      run: terraform Apply - auto-approve
+      run: terraform apply - auto-approve
